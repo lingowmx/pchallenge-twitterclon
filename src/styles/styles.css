@@ -1,0 +1,219 @@
+:root{
+    --color-gray: grey;
+    --color-backround-grey: #dadfe4fd;
+    --color-blue-tweet: #1d9bf0;
+    --color-backgroun-grey-youmight: #f7f9f9;
+    --color-grey-search: #f0f3f4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    /* background-color: black; */
+}
+
+body{
+    font-family: sans-serif;
+    /* background-color: black; */
+    /* color: white;    */
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-size: 1.9rem;
+    padding: 10px 5px;
+    background-color: transparent;
+    border: 0;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--color-backround-grey);
+}
+
+.twitter{
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.twitter--menu, .twitter--recommended{
+    width: 25%;
+    padding: 2px 15px 15px 15px;
+}
+.twitter--menu{
+    margin: 0 0 0 40px;
+}
+.twitter--recommended{
+    margin: 0 40px 0 0;
+}
+
+.twitter--profile{
+    width: 50%;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.profile--banner img{
+    width: 100%;
+}
+
+/* twitter menu */
+.twitter--nav .nav--list{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.twitter--nav .nav--list .item--button{
+    text-align: left;
+    width: 100%;
+    border-radius: 25px;
+    margin:12px 0 12px 36px;
+    letter-spacing: 1px;
+}
+
+.twitter--nav .nav--list .item--button--tweet{
+    background-color: var(--color-blue-tweet);
+    border-radius: 60px;
+    width: 90%;
+    height: 55px;
+    color: white;
+    margin: 25px auto 100px;
+}
+.twitter--nav .nav--list .item--button--tweet:hover{
+    background-color: #177fc4d8;
+}
+
+.twitter--logo{
+
+}
+
+.list--item{
+    letter-spacing: 1px;
+    display: flex;
+}
+
+.header--img--container img{
+    border-radius: 50%;
+    border: white solid 3px;
+    width: 24%;
+    z-index: 0;
+    margin-top: -40px;
+    margin-left: 16px;
+}
+.item--header--buttons{
+    text-align: right;
+    flex-wrap: wrap;
+    margin: -88px 65px 59px auto;
+}
+
+.profile--header{
+    display: flex;
+    align-items: center;
+}
+
+.profile--header .info--name{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.profile--header .header--button{
+    margin-right: 28px;
+  
+}
+
+.profile--header .info--tweets{
+    color: var(--color-gray);
+}
+
+.description--name{
+    margin: 15px 0 0 15px;
+}
+.description--user{
+    font-size: 1.5rem;
+}
+.description--name--title{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.description--profile, .description--profile--paragraphs, .description--profile--links{
+    margin: 15px 0 0 15px;
+    font-size: 1.5rem;
+}
+.twitter--recommended .recommended--header input{
+    border-radius: 20px;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: var(--color-grey-search);
+}
+
+.recommended--images--one, .recommended--images--two{
+    display: flex;
+    gap: 2px;
+}
+
+.recommended--images--one{
+    margin: 16px 0 2px  0px;
+}
+
+.youmightlike{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    background-color:  var(--color-backgroun-grey-youmight);
+    margin: 12px 0 0 0;
+}
+.youmightlike h3{
+    margin: 19px 0 0 16px;
+    font-size: 2.5rem;
+}
+
+.youmightlike--user--profile{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.youmightlike--user--profile img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.new--username{
+    margin: 0 0 0 10px;
+    font-size: 1.3rem;
+}
+
+.new--username :first-child{
+    font-weight: 900;
+}
+
+.showmore{
+    margin: 20px 0 0 25px;
+    font-size: 1.5rem;
+}
+.showmore a{
+    color: var(--color-blue-tweet);
+}
+
+.user--profile--button{
+    border-radius: 20px;
+    border: 0 solid none;
+    background-color: black;
+    color: white;
+    margin: 0 0 0 50px;
+    width: 30%;
+}
